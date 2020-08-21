@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Seat Booking</title>
     <!-- ************** CSS ************** -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="http://www.google.com/s2/favicons?domain=css-tricks.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <div class="movie-container">
-        <label>Pick a movie:</label>
+        <label>Select movie:</label>
         <select name="" id="movie">
             <option value="10">Bad Boys For Life ($10)</option>
             <option value="12">A Secret Love ($12)</option>
@@ -38,7 +42,9 @@
     </ul>
 
     <div class="container">
-        <div class="screen"></div>
+        <div class="screen">
+            <p>SCREEN</p>
+        </div>
 
         <div class="row">
             <div class="seat"></div>
@@ -88,22 +94,13 @@
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat occupied"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seatoccupied"></div>
-            <div class="seat"></div>
             <div class="seat"></div>
         </div>
     </div>
 
     <p class="text">You have selected <span class="count">0</span> seats for a price of $<span class="total">0</span>
     </p>
+
     <!-- ************** SCRIPTS ************** -->
     <script src="./js/script.js"></script>
 </body>
